@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Beginning"
+date:   2026-06-03 14:00:00 +0800
+categories: Miscellaneous
+mathjax: false
+---
+
+### 2026年6月3日，🐉终于有了🐉🉐主页。
+
+##### 事后会在这里更新学习笔记和代码等等喵，也可能之后搞点前端给打扮一下喵
+
+
