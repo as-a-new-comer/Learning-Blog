@@ -1,0 +1,15 @@
+---
+layout: default
+title: Tags
+permalink: /tags/
+---
+{%- for tag in site.tags -%}
+<div class="card" id="{{ tag[0] | slugify }}">
+  <h3 style="margin-bottom:12px;">#{{ tag[0] }} <span style="color:var(--color-text-light);font-size:0.85rem;">({{ tag[1].size }})</span></h3>
+  <ul style="list-style:none;line-height:2.2;">
+    {%- for post in tag[1] -%}
+    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <span style="color:var(--color-text-light);font-size:0.85rem;">{{ post.date | date: "%Y-%m-%d" }}</span></li>
+    {%- endfor -%}
+  </ul>
+</div>
+{%- endfor -%}

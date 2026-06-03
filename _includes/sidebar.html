@@ -21,7 +21,7 @@
     <div class="sidebar-title">Categories</div>
     <div style="font-size:0.9rem;line-height:2;">
       {%- for cat in site.categories -%}
-        <a class="tag" href="{{ '/categories/' | append: cat[0] | relative_url }}">{{ cat[0] }} ({{ cat[1].size }})</a>
+        <a class="tag" href="{{ '/categories/' | relative_url }}#{{ cat[0] | slugify }}">{{ cat[0] }} ({{ cat[1].size }})</a>
       {%- endfor -%}
     </div>
   </div>
@@ -32,7 +32,7 @@
     <div class="sidebar-title">Tags</div>
     <div style="font-size:0.9rem;line-height:2;">
       {%- for tag in site.tags -%}
-        <a class="tag" href="{{ '/tags/' | append: tag[0] | relative_url }}">{{ tag[0] }}</a>
+        <a class="tag" href="{{ '/tags/' | relative_url }}#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
       {%- endfor -%}
     </div>
   </div>
