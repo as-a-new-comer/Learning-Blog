@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "数学公式测试"
+date:   2026-06-03 14:00:00 +0800
+categories: math
+mathjax: true
+---
+
+这篇文章测试 MathJax 数学公式渲染。
+
+## 行内公式
+
+质能方程 $E = mc^2$，这是行内公式。
+
+## 块级公式
+
+二重积分：
+
+$$
+\iint_D f(x,y)\,dx\,dy
+$$
+
+高斯公式（三重积分与曲面积分的转换）：
+
+$$
+\iiint_\Omega \left( \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z} \right) dv = \oiint_\Sigma P\,dy\,dz + Q\,dz\,dx + R\,dx\,dy
+$$
+
+## 矩阵
+
+$$
+\begin{pmatrix}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{pmatrix}
+$$
+
+## 极限和级数
+
+$$
+\lim_{n \to \infty} \sum_{k=1}^{n} \frac{1}{k^2} = \frac{\pi^2}{6}
+$$
+
+## 代码块（也支持）
+
+```python
+def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a + b
+    return a
+```
