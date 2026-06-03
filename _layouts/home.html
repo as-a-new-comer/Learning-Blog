@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="card">
+  <h2 style="font-weight:700;margin-bottom:4px;">Welcome</h2>
+  <p style="color:var(--color-text-light);">{{ site.description }}</p>
+</div>
+
+{%- for post in site.posts -%}
+<article class="card post-list-item">
+  <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+  <div class="post-meta">
+    <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+    {%- if post.categories.size > 0 -%}
+    <span>· {{ post.categories | join: ", " }}</span>
+    {%- endif -%}
+  </div>
+  {%- if post.excerpt -%}
+    <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+  {%- endif -%}
+</article>
+{%- endfor -%}
