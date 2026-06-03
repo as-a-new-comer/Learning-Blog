@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="card">
+  <header class="article-header">
+    <h1 class="article-title">
+      {%- case page.type -%}
+        {%- when 'tag' -%}Tag: {{ page.title }}
+        {%- when 'category' -%}Category: {{ page.title }}
+      {%- endcase -%}
+    </h1>
+  </header>
+  <div style="font-size:0.85rem;color:var(--color-text-light);margin-bottom:16px;">
+    {{ page.posts.size }} post(s)
+  </div>
+  <ul style="list-style:none;padding:0;line-height:2.2;">
+    {%- for post in page.posts -%}
+    <li>
+      <span style="color:var(--color-text-light);font-size:0.85rem;">{{ post.date | date: "%Y-%m-%d" }}</span>
+      &raquo; <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>

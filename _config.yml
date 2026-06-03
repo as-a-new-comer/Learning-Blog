@@ -34,6 +34,17 @@ giscus:
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-archives
+
+# Archive settings (auto-generates tag/category pages)
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: archive
+  permalinks:
+    category: '/categories/:name/'
+    tag: '/tags/:name/'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
