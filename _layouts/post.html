@@ -11,7 +11,15 @@ layout: default
       {%- endif -%}
     </div>
   </header>
+  {%- if page.tags.size > 0 -%}
+  <div class="post-tags" style="margin-top:16px;">
+    {%- for tag in page.tags -%}
+    <a class="tag" href="{{ '/tags/' | append: tag | relative_url }}">{{ tag }}</a>
+    {%- endfor -%}
+  </div>
+  {%- endif -%}
   <div class="article-content">
     {{ content }}
   </div>
 </article>
+{%- include comments.html -%}

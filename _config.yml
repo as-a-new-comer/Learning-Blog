@@ -25,6 +25,11 @@ baseurl: "/Learning-Blog"
 url: "https://as-a-new-comer.github.io"
 github_username: as-a-new-comer
 
+# Giscus comments
+giscus:
+  category: "General"
+  category_id: "DIC_kwDOSvrYA84C-Z9O"
+
 # Build settings
 theme: minima
 plugins:
