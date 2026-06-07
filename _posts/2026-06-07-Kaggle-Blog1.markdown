@@ -2,7 +2,7 @@
 layout: post
 title:  "Kaggle-Blog 1"
 date:   2026-06-04 12:00:00 +0800
-categories: Miscellaneous
+categories: DS
 tags: DS
 mathjax: false
 ---
@@ -28,5 +28,3 @@ mathjax: false
 下一步在这里的优化可以先尝试XGBoost，如果没有显著提升可以考虑特征预加工
 
 玩好玩？？！！
-
-
