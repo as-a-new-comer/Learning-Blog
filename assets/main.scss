@@ -78,11 +78,11 @@ body::after {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  clip-path: inset(0 0 100% 0);
-  transition: clip-path 0.8s ease-out;
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path 1s cubic-bezier(0.15, 0.55, 0.3, 1);
 }
 html.bg-loaded body::after {
-  clip-path: inset(0 0 100% 0);
+  clip-path: inset(100% 0 0 0);
 }
 html.dark.bg-loaded body::after {
   clip-path: inset(0);
