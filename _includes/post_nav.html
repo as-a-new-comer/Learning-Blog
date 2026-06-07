@@ -1,0 +1,38 @@
+{%- assign prev_post = nil -%}
+{%- assign next_post = nil -%}
+
+{%- if page.series -%}
+  {%- assign series_posts = site.posts | where: "series", page.series | sort: "series_index" -%}
+  {%- for post in series_posts -%}
+    {%- if post.series_index == page.series_index -%}
+      {%- unless forloop.first -%}
+        {%- assign prev_index = forloop.index0 | minus: 2 -%}
+        {%- assign prev_post = series_posts[prev_index] -%}
+      {%- endunless -%}
+      {%- unless forloop.last -%}
+        {%- assign next_post = series_posts[forloop.index0] -%}
+      {%- endunless -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- else -%}
+  {%- assign prev_post = page.previous -%}
+  {%- assign next_post = page.next -%}
+{%- endif -%}
+
+{%- if prev_post or next_post -%}
+<nav class="card post-nav" style="display:flex;justify-content:space-between;gap:16px;margin-top:24px;">
+  <div style="flex:1;">
+    {%- if prev_post -%}
+      <small style="color:var(--color-text-light);">← Prev</small><br>
+      <a href="{{ prev_post.url | relative_url }}">{{ prev_post.title }}</a>
+    {%- endif -%}
+  </div>
+  <div style="flex:1;text-align:right;">
+    {%- if next_post -%}
+      <small style="color:var(--color-text-light);">Next →</small><br>
+      <a href="{{ next_post.url | relative_url }}">{{ next_post.title }}</a>
+    {%- endif -%}
+  </div>
+</nav>
+{%- endif -%}
