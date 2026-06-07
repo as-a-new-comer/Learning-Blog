@@ -2,10 +2,24 @@
 ---
 // ============================================
 //  Dragon_Heart Blog - Main JavaScript
-//  这就是 JS 入口文件，像 main() 一样
 // ============================================
 
-// 1. 等页面加载完再执行（否则 DOM 还没准备好）
+// 预加载背景图：全部加载完后再淡入，避免逐行加载白条
+(function preloadBg() {
+  var day = new Image();
+  var night = new Image();
+  var loaded = 0;
+  function onLoad() {
+    loaded++;
+    if (loaded === 2) {
+      document.documentElement.classList.add('bg-loaded');
+    }
+  }
+  day.onload = night.onload = onLoad;
+  day.src = '/Learning-Blog/assets/images/Bg_Norway_lofoten_mountains.jpg';
+  night.src = '/Learning-Blog/assets/images/Bg_Norway_dusk.jpg';
+})();
+
 document.addEventListener('DOMContentLoaded', function () {
   
   // === 暗色模式切换 ===

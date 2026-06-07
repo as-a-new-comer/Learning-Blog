@@ -53,10 +53,16 @@ body::before {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+html.bg-loaded body::before {
   opacity: 1;
-  transition: opacity 0.8s ease;
 }
 html.dark body::before {
+  transition: opacity 0.8s ease;
+}
+html.dark.bg-loaded body::before {
   opacity: 0;
 }
 
@@ -75,7 +81,10 @@ body::after {
   clip-path: inset(0 0 100% 0);
   transition: clip-path 0.8s ease-out;
 }
-html.dark body::after {
+html.bg-loaded body::after {
+  clip-path: inset(0 0 100% 0);
+}
+html.dark.bg-loaded body::after {
   clip-path: inset(0);
 }
 
