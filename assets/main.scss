@@ -38,39 +38,45 @@ body {
   line-height: 1.7;
   font-size: 16px;
   background-color: var(--color-bg);
-  background-image: url("/Learning-Blog/assets/images/Bg_Norway_lofoten_mountains.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-
   position: relative;
 }
-html.dark body {
-  background-image: url("/Learning-Blog/assets/images/Bg_Norway_dusk.jpg");
-  background-color: #1a1a2e;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
+
+/* 白天挪威山 — 顶层，暗色时淡出 */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.5s ease;
+  background-image: url("/Learning-Blog/assets/images/Bg_Norway_lofoten_mountains.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 0.8s ease;
 }
 html.dark body::before {
-  opacity: 1;
-  background: linear-gradient(
-    to bottom,
-    rgba(26, 26, 46, 0.5) 0%,
-    rgba(22, 33, 62, 0.75) 50%,
-    rgba(15, 15, 35, 0.9) 100%
-  );
+  opacity: 0;
+}
+
+/* 夜挪威山 — 底层，暗色时从下向上展开 */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background-image: url("/Learning-Blog/assets/images/Bg_Norway_dusk.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 0.8s ease-out;
+}
+html.dark body::after {
+  clip-path: inset(0);
 }
 
 /* ===== Nav ===== */
