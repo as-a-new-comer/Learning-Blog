@@ -1,0 +1,9 @@
+<div class="card" style="padding:4px;overflow:hidden;">
+  <iframe
+    src="https://nbviewer.org/github/{{ include.repo | default: 'as-a-new-comer/Learning-Blog' }}/blob/main/{{ include.path }}"
+    width="100%"
+    height="{{ include.height | default: 800 }}"
+    style="border:none;border-radius:var(--radius-sm);"
+    loading="lazy">
+  </iframe>
+</div>
