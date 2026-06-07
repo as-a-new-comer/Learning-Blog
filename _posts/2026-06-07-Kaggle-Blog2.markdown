@@ -33,9 +33,9 @@ mathjax: false
 
 原始分布严重右偏（长尾在高端），低端集中于 $150k-$160k。经 `np.log1p` 变换后接近正态分布——线性模型的前提条件满足。
 
-![2b729c27-7a5a-4a05-86df-b9d7cdf6e741](file:///C:/Users/Lenovo/Pictures/Typedown/2b729c27-7a5a-4a05-86df-b9d7cdf6e741.png)
+![2b729c27-7a5a-4a05-86df-b9d7cdf6e741](/Learning-Blog/assets/images/2b729c27-7a5a-4a05-86df-b9d7cdf6e741.png)
 
-![f23991ca-4887-4f36-a4bb-0f749444cba9](file:///C:/Users/Lenovo/Pictures/Typedown/f23991ca-4887-4f36-a4bb-0f749444cba9.png)
+![f23991ca-4887-4f36-a4bb-0f749444cba9](/Learning-Blog/assets/images/f23991ca-4887-4f36-a4bb-0f749444cba9.png)
 
 ### 2.2 缺失值诊断
 
