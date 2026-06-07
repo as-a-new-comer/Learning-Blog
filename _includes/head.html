@@ -2,7 +2,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2d3748">
   {%- seo -%}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
@@ -12,4 +16,5 @@
     {%- include mathjax.html -%}
   {%- endif -%}
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  <script src="https://instant.page/5.2.0" type="module" integrity="sha384-jnZyxPqS2BlSq9MhTv9n0o8ZLH7mWvn8fLhNYR9RT7uPbLQzD6sq1aZSJncq2DS"></script>
 </head>
