@@ -2,8 +2,8 @@
 layout: post
 title:  "学习笔记-C++ IO流（补档）"
 date:   2026-06-03 00:00:00 +0800
-categories: guide
-tags: guide media pdf
+categories: CS
+tags: CS
 mathjax: false
 ---
 

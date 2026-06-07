@@ -3,7 +3,7 @@ layout: post
 title:  "Kaggle-Blog 1"
 date:   2026-06-04 12:00:00 +0800
 categories: Miscellaneous
-tags: misc
+tags: DS
 mathjax: false
 ---
 
