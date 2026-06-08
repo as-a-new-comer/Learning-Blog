@@ -5,7 +5,16 @@ layout: default
   <p style="font-style:italic;font-size:1.3rem;color:var(--color-accent);font-weight:600;">Mens et Manus</p>
 </div>
 
+{%- assign current_date = "" -%}
 {%- for post in site.posts -%}
+  {%- assign post_date = post.date | date: "%Y-%m-%d" -%}
+  {%- if post_date != current_date -%}
+    {%- assign current_date = post_date -%}
+    <div class="milestone">
+      <i class="milestone-arrow">▶</i>
+      <span class="milestone-date">{{ post_date }}</span>
+    </div>
+  {%- endif -%}
 <article class="card post-list-item">
   <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
   <div class="post-meta">

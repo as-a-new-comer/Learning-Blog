@@ -175,6 +175,24 @@ html.dark.bg-loaded body::after {
 }
 .post-excerpt { margin-top: 8px; color: var(--color-text-light); font-size: 0.95rem; }
 
+/* ===== Milestone ===== */
+.milestone {
+  display: flex; align-items: center; gap: 8px;
+  margin: 24px 0 8px; position: relative;
+}
+.milestone::after {
+  content: ''; flex: 1; height: 1px;
+  background: linear-gradient(to right, var(--color-border), transparent);
+}
+.milestone-arrow {
+  font-size: 0.75rem; color: var(--color-accent);
+  transform: scaleX(0.8); /* 让 ▶ 看起来瘦一点 */
+}
+.milestone-date {
+  font-size: 0.85rem; color: var(--color-text-light);
+  font-weight: 600; letter-spacing: 0.5px;
+}
+
 /* ===== Sidebar ===== */
 .sidebar-card { margin-bottom: 20px; }
 .sidebar-title {
