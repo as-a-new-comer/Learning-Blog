@@ -42,8 +42,6 @@ defaults:
       path: "_posts"
     values:
       layout: post
-      categories: "Miscellaneous"
-      tags: "misc"
 
 # Archive settings (auto-generates tag/category pages)
 jekyll-archives:
