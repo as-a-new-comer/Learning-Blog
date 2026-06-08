@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "网站美化 6/7"
-date:   2026-06-04 22:00:00 +0800
+title:  "网站美化 6/8"
+date:   2026-06-08 22:00:00 +0800
 categories: Page
 tags: misc
 mathjax: false

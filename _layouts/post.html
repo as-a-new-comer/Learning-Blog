@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="card">
   <header class="article-header">
-    <h1 class="article-title">{{ page.title | escape }}</h1>
+    <h1 class="article-title">{{ page.title | default: page.slug | replace: '-', ' ' | escape }}</h1>
     <div class="post-meta">
       <span>{{ page.date | date: "%Y-%m-%d" }}</span>
       {%- if page.categories.size > 0 -%}

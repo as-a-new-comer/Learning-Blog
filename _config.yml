@@ -36,6 +36,15 @@ plugins:
   - jekyll-feed
   - jekyll-archives
 
+# 默认 front matter：不写 category/tag 时自动填入
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      categories: "Miscellaneous"
+      tags: "misc"
+
 # Archive settings (auto-generates tag/category pages)
 jekyll-archives:
   enabled:
