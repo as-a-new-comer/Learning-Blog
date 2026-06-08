@@ -123,6 +123,24 @@ html.dark.bg-loaded body::after {
 .nav-links a:hover { color: #fff; }
 .nav-links a:hover::after { width: 100%; }
 
+/* Eye toggle */
+.eye-toggle {
+  color: var(--color-nav-text); text-decoration: none;
+  font-size: 1.2rem; margin-left: 16px;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+.eye-toggle:hover { transform: scale(1.2); }
+
+/* Hide cards mode */
+html.hide-cards .card,
+html.hide-cards .site-footer,
+html.hide-cards .post-nav {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+html.hide-cards .site-nav { background: transparent; box-shadow: none; }
+
 /* ===== Layout ===== */
 .page-wrapper {
   max-width: var(--max-width);

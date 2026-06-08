@@ -24,7 +24,10 @@ document.addEventListener('DOMContentLoaded', function () {
   
   // === 暗色模式切换 ===
   initDarkMode();
-  
+
+  // === 眼睛按钮：隐藏/显示卡片 ===
+  initEyeToggle();
+
   // === 回到顶部按钮 ===
   initBackToTop();
   
@@ -66,6 +69,19 @@ function initDarkMode() {
 
 function isDark() {
   return document.documentElement.classList.contains('dark');
+}
+
+// ============================================
+//  眼睛按钮：隐藏/显示卡片，看背景图
+// ============================================
+function initEyeToggle() {
+  var btn = document.querySelector('.eye-toggle');
+  if (!btn) return;
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    var hidden = document.documentElement.classList.toggle('hide-cards');
+    btn.textContent = hidden ? '👁‍🗨' : '👁';
+  });
 }
 
 // ============================================
