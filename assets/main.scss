@@ -182,19 +182,20 @@ html.dark.bg-loaded body::after {
 }
 .milestone-date {
   font-size: 0.85rem; font-weight: 700; letter-spacing: 0.5px;
-  color: var(--color-accent);
+  color: var(--color-glass);
   white-space: nowrap;
 }
 .milestone-arrow {
   width: 0; height: 0;
   border-top: 0.55em solid transparent;
   border-bottom: 0.55em solid transparent;
-  border-left: 0.85em solid var(--color-accent);
+  border-left: 0.85em solid var(--color-glass);
   flex-shrink: 0;
 }
 .milestone-line {
-  flex: 1; height: 1px;
-  background: var(--color-border);
+  flex: 1; height: 4px;
+  background: var(--color-glass);
+  border-radius: 2px;
   transform: scaleX(0);
   transform-origin: left;
 }
