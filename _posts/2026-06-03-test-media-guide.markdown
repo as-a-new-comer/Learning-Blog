@@ -2,8 +2,8 @@
 layout: post
 title:  "多模态内容渲染指南"
 date:   2026-06-03 00:00:00 +0800
-categories: Guide
-tags: pdf embed
+categories: Test
+tags: pdf
 ---
 
 ## PDF 嵌入
