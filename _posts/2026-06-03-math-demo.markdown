@@ -2,8 +2,8 @@
 layout: post
 title:  "数学公式测试"
 date:   2026-06-03 14:00:00 +0800
-categories: test
-tags: math latex
+categories: Math
+tags: integration latex
 mathjax: true
 ---
 

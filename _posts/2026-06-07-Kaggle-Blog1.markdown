@@ -2,9 +2,8 @@
 layout: post
 title:  "Kaggle-Blog 1"
 date:   2026-06-04 12:00:00 +0800
-categories: DS
-tags: DS
-mathjax: false
+categories: Kaggle
+tags: titanic logistic-regression
 ---
 
 ### 2026/6/7 补档之前的记录

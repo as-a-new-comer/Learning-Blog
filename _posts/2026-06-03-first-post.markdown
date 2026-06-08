@@ -2,9 +2,7 @@
 layout: post
 title:  "🐉🉐窝"
 date:   2026-06-03 14:00:00 +0800
-categories: Miscellaneous
-tags: misc
-mathjax: false
+categories: Misc
 ---
 
 ### 2026年6月3日，🐉终于有了🐉🉐主页。

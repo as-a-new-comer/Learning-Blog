@@ -3,8 +3,7 @@ layout: post
 title:  "网站美化 6/7"
 date:   2026-06-07 22:00:00 +0800
 categories: Page
-tags: misc
-mathjax: false
+tags: css
 ---
 
 ### 2026/6/7

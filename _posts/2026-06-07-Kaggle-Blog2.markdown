@@ -2,8 +2,8 @@
 layout: post
 title:  "Kaggle-Blog 2 Ames Housing"
 date:   2026-06-07 19:00:00 +0800
-categories: DS
-tags: DS
+categories: Kaggle
+tags: ames-housing feature-engineering
 mathjax: false
 ---
 

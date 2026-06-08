@@ -3,8 +3,7 @@ layout: post
 title:  "学习笔记-C++ IO流（补档）"
 date:   2026-06-07 00:00:00 +0800
 categories: CS
-tags: CS
-mathjax: false
+tags: cpp iostream
 ---
 
 ### 2/6/2026
