@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "网站美化 6/8"
+title:  "学习笔记 计组"
 date:   2026-06-08 20:00:00 +0800
 categories: CS
 tags: Computer-Component
@@ -162,5 +162,3 @@ tags: Computer-Component
 - 计数器定时查询：循环查询地址是否发起请求，也可以每次重置，退化回链式。依赖总线时钟和地址计数器。
 
 - 独立请求方式：每个硬件都可以跟控制器单独握握手，先后顺序由程序自行决定。但是复杂度高
-
-
