@@ -29,7 +29,7 @@
   <div class="card sidebar-card">
     <div class="sidebar-title">Tags</div>
     <div style="font-size:0.9rem;line-height:2;">
-      {%- for tag in site.tags -%}
+      {%- for tag in site.tags limit:12 -%}
         <a class="tag" href="{{ '/tags/' | relative_url }}#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
       {%- endfor -%}
     </div>
