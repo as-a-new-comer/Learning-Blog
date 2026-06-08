@@ -11,8 +11,9 @@ layout: default
   {%- if post_date != current_date -%}
     {%- assign current_date = post_date -%}
     <div class="milestone">
-      <i class="milestone-arrow">▶</i>
       <span class="milestone-date">{{ post_date }}</span>
+      <i class="milestone-arrow"></i>
+      <span class="milestone-line"></span>
     </div>
   {%- endif -%}
 <article class="card post-list-item">
