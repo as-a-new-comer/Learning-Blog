@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Kaggle-Blog 3 Ames Housing"
-date:   2026-061-0 23:00:00 +0800
+date:   2026-06-10 23:00:00 +0800
 categories: Kaggle
 tags: ames-housing feature-engineering
 mathjax: false
@@ -51,4 +51,4 @@ mathjax: false
 
 ### 均值和稳定性都显著提升了。不进行对最优树结构的grid_search
 
-
+### 而且对比试验显示，是否对数拉平、是否序编码，根本不重要。树模型自己就能够学习这些，并且达到和手动处理之后几乎相同的结果。
